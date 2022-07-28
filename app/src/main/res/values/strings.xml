@@ -2,14 +2,13 @@
     <string name="app_name">ScoreKeeper</string>
     <string name="team_b_name">Team B</string>
     <string name="team_a_name">Team A</string>
-    <string name="current_team">Current Selection: </string>
+    <string name="current_team">Current Team: </string>
     <string name="default_score">0</string>
     <string name="select_change_value">select change value</string>
     <string name="deduct">Deduct</string>
     <string name="increase">Increase</string>
     <string name="team_a">SRH</string>
     <string name="team_b">RCB</string>
-    <string name="current_selected_team">Current Team: SRH</string>
     <string-array name="scores_values">
         <item>1 - Single</item>
         <item>2 - Double</item>

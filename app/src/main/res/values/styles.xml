@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="defaultCustomTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">@dimen/minimum</item>
+    </style>
+
+    <style name="teamTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">@dimen/minimum</item>
+        <item name="android:textSize">@dimen/smallFontSize</item>
+        <item name="android:layout_height">@dimen/minimumHeight</item>
+    </style>
+
+    <style name="teamScoreTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">@dimen/minimum</item>
+        <item name="android:textSize">@dimen/largeFontSize</item>
+        <item name="android:layout_height">@dimen/maximumHeight</item>
+    </style>
+
+    <style name="customButtonDimensions" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:insetTop">@dimen/minimum</item>
+        <item name="android:insetBottom">@dimen/minimum</item>
+        <item name="android:layout_width">@dimen/minimum</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">228dp</item>
+    </style>
+
+    <style name="customButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="defaultCustomTextViewNightMode" parent="defaultCustomTextView">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="customButtonNightMode" parent="customButton">
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

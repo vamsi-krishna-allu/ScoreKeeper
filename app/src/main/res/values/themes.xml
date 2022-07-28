@@ -12,5 +12,12 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">#3D00BB</item>
         <!-- Customize your theme here. -->
+        <item name="android:textViewStyle">
+            @style/defaultCustomTextView
+        </item>
+
+        <item name="materialButtonStyle">
+            @style/customButton
+        </item>
     </style>
 </resources>

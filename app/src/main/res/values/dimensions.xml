@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="smallFontSize">24sp</dimen>
+    <dimen name="largeFontSize">96sp</dimen>
+    <dimen name="minimum">0dp</dimen>
+    <dimen name="minimumHeight">40dp</dimen>
+    <dimen name="maximumHeight">173dp</dimen>
+</resources>
