@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--Spinner to show the list of scores-->
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="395dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="95dp"
+        android:contentDescription="@string/select_change_value"
+        android:entries="@array/scores_values"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--TextView for team A name-->
+    <TextView
+        android:id="@+id/teamATextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="73dp"
+        android:text="@string/team_a_name"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/teamBTextView"
+        app:layout_constraintEnd_toStartOf="@+id/teamBTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/teamBTextView" />
+
+    <!--TextView for team B name-->
+    <TextView
+        android:id="@+id/teamBTextView"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="171dp"
+        android:layout_marginEnd="42dp"
+        android:text="@string/team_b_name"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/teamATextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--TextView for team A score-->
+    <TextView
+        android:id="@+id/teamAScoreTextView"
+        android:layout_width="0dp"
+        android:layout_height="173dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="72dp"
+        android:text="@string/default_score"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="96sp"
+        app:layout_constraintEnd_toStartOf="@+id/teamBScoreTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamATextView" />
+
+    <!--TextView for team B score-->
+    <TextView
+        android:id="@+id/teamBScoreTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="42dp"
+        android:text="@string/default_score"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toBottomOf="@+id/teamAScoreTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/teamAScoreTextView"
+        app:layout_constraintTop_toTopOf="@+id/teamAScoreTextView" />
+
+    <!--Button for increasing score-->
+    <Button
+        android:id="@+id/increaseButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="228dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/increase"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <!--Button for deducting score-->
+    <Button
+        android:id="@+id/deductButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="228dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/deduct"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeColor="#6C00F8" />
+
+    <!--Switch to toggle between the teams-->
+    <Switch
+        android:id="@+id/teamSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#0055FF"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:thumbTint="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/deductButton"
+        app:layout_constraintTop_toBottomOf="@+id/deductButton"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <!--TextView to show current selection team-->
+    <TextView
+        android:id="@+id/currentSelectionTextView"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="73dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/current_team"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/teamSwitch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

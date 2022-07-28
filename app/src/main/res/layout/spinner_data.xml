@@ -1,0 +1,9 @@
+<!--TextView used in the spinner to show it in customised format-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:textAlignment="center"
+    android:textColor="#3D00BB"
+    android:textSize="24sp"
+    android:textStyle="bold" />
