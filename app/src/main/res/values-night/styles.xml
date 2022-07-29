@@ -29,7 +29,7 @@
         <item name="android:insetBottom">@dimen/minimumValue</item>
         <item name="android:layout_width">@dimen/minimumValue</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginBottom">228dp</item>
+        <item name="android:layout_marginBottom">@dimen/button_marginBottom</item>
     </style>
 
     <!-- common styles used for all buttons-->
@@ -48,6 +48,7 @@
         <item name="android:textSize">@dimen/smallFontSize</item>
     </style>
 
+    <!-- common style used for switch-->
     <style name="customSwitch">
         <item name="android:colorControlActivated">@color/yellow</item>
     </style>
