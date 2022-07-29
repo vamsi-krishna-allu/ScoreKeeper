@@ -1,6 +1,8 @@
 /**
  * @author: vamsi krishna allu
  * student number : A00259393
+ * @author: Naresh kamanaboyana
+ * student number : A00257027
  * MAPD - JAV-1001 - App Development for Android
  */
 package com.assignment.scorekeeperstyles;
