@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- default custom styles used for all text views-->
+    <style name="defaultCustomTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">@dimen/minimumValue</item>
+    </style>
+
+    <!-- custom styles used for text views that shows the team names-->
+    <style name="teamTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">@dimen/minimumValue</item>
+        <item name="android:textSize">@dimen/smallFontSize</item>
+        <item name="android:layout_height">@dimen/minimumHeight</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- custom styles used for text views that shows the team scores-->
+    <style name="teamScoreTextView" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">@dimen/minimumValue</item>
+        <item name="android:textSize">@dimen/largeFontSize</item>
+        <item name="android:layout_height">@dimen/maximumHeight</item>
+    </style>
+
+    <!-- common measurements used for increase and decrease buttons-->
+    <style name="customButtonDimensions" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:insetTop">@dimen/minimumValue</item>
+        <item name="android:insetBottom">@dimen/minimumValue</item>
+        <item name="android:layout_width">@dimen/minimumValue</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/button_marginBottom</item>
+    </style>
+
+    <!-- common styles used for all buttons-->
+    <style name="customButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:backgroundTint">@color/blue</item>
+    </style>
+
+    <!-- common styles used for spinner-->
+    <style name="customSpinner" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/blue</item>
+        <item name="android:textSize">@dimen/smallFontSize</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- common style used for switch-->
+    <style name="customSwitch">
+        <item name="android:colorControlActivated">@color/blue</item>
+    </style>
+</resources>

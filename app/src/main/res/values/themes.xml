@@ -1,16 +1,27 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Theme.ScoreKeeper" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#3D00BB</item>
-        <item name="colorPrimaryVariant">#3D00BB</item>
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">#3D00BB</item>
-        <item name="colorSecondaryVariant">#3D00BB</item>
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">#3D00BB</item>
-        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@drawable/gradient_background</item>
+        <!-- Status bar color if enabled in mainActivity this can be viewed -->
+        <item name="android:statusBarColor">@color/blue</item>
+
+        <!-- custom style for text view-->
+        <item name="android:textViewStyle">
+            @style/defaultCustomTextView
+        </item>
+        <!-- custom view style for button-->
+        <item name="materialButtonStyle">
+            @style/customButton
+        </item>
+
     </style>
+
 </resources>

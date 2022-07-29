@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- below are the possible dimensions that are used in code -->
+<resources>
+    <!-- minimum and maximum font sizes used-->
+    <dimen name="smallFontSize">24sp</dimen>
+    <dimen name="largeFontSize">96sp</dimen>
+    <dimen name="minimumValue">0dp</dimen>
+    <!-- minimum and maximum height used-->
+    <dimen name="minimumHeight">40dp</dimen>
+    <dimen name="maximumHeight">173dp</dimen>
+    <!-- spinner dimensions-->
+    <dimen name="spinner_width">395dp</dimen>
+    <dimen name="spinner_height">48dp</dimen>
+    <dimen name="spinner_marginStart">6dp</dimen>
+    <dimen name="spinner_marginTop">95dp</dimen>
+    <dimen name="spinner_padding">8dp</dimen>
+    <!-- button dimensions-->
+    <dimen name="button_margin">56dp</dimen>
+    <dimen name="button_marginBottom">228dp</dimen>
+    <!-- switch button dimensions-->
+    <dimen name="switch_marginTop">36dp</dimen>
+    <dimen name="switch_marginEnd">28dp</dimen>
+    <dimen name="switch_minSize">48dp</dimen>
+    <!-- current team selection margin dimensions-->
+    <dimen name="current_team_marginHorizontal">50dp</dimen>
+    <dimen name="current_team_marginTop">71dp</dimen>
+    <dimen name="current_team_marginBottom">73dp</dimen>
+    <!-- team a margin dimensions-->
+    <dimen name="team_a_marginStart">42dp</dimen>
+    <dimen name="team_a_marginEnd">73dp</dimen>
+    <!-- team b margin dimensions-->
+    <dimen name="team_b_marginTop">171dp</dimen>
+    <dimen name="team_b_marginEnd">42dp</dimen>
+    <!-- team b margin dimensions-->
+    <dimen name="team_a_score_marginTop">35dp</dimen>
+    <dimen name="team_a_score_marginEnd">72dp</dimen>
+
+</resources>

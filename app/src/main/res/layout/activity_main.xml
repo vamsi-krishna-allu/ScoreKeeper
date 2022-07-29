@@ -9,10 +9,10 @@
     <!--Spinner to show the list of scores-->
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="395dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="95dp"
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="@dimen/spinner_height"
+        android:layout_marginStart="@dimen/spinner_marginStart"
+        android:layout_marginTop="@dimen/spinner_marginTop"
         android:contentDescription="@string/select_change_value"
         android:entries="@array/scores_values"
         android:textAlignment="center"
@@ -22,14 +22,10 @@
     <!--TextView for team A name-->
     <TextView
         android:id="@+id/teamATextView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="42dp"
-        android:layout_marginEnd="73dp"
+        style="@style/teamTextView"
+        android:layout_marginStart="@dimen/team_a_marginStart"
+        android:layout_marginEnd="@dimen/team_b_marginEnd"
         android:text="@string/team_a_name"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/teamBTextView"
         app:layout_constraintEnd_toStartOf="@+id/teamBTextView"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,14 +34,10 @@
     <!--TextView for team B name-->
     <TextView
         android:id="@+id/teamBTextView"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="171dp"
-        android:layout_marginEnd="42dp"
+        style="@style/teamTextView"
+        android:layout_marginTop="@dimen/team_b_marginTop"
+        android:layout_marginEnd="@dimen/team_b_marginEnd"
         android:text="@string/team_b_name"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/teamATextView"
         app:layout_constraintTop_toTopOf="parent" />
@@ -53,15 +45,11 @@
     <!--TextView for team A score-->
     <TextView
         android:id="@+id/teamAScoreTextView"
-        android:layout_width="0dp"
-        android:layout_height="173dp"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="72dp"
+        style="@style/teamScoreTextView"
+        android:layout_marginStart="@dimen/team_a_marginStart"
+        android:layout_marginTop="@dimen/team_a_score_marginTop"
+        android:layout_marginEnd="@dimen/team_a_score_marginEnd"
         android:text="@string/default_score"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="96sp"
         app:layout_constraintEnd_toStartOf="@+id/teamBScoreTextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/teamATextView" />
@@ -69,13 +57,9 @@
     <!--TextView for team B score-->
     <TextView
         android:id="@+id/teamBScoreTextView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="42dp"
+        style="@style/teamScoreTextView"
+        android:layout_marginEnd="@dimen/team_b_marginEnd"
         android:text="@string/default_score"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="96sp"
         app:layout_constraintBottom_toBottomOf="@+id/teamAScoreTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/teamAScoreTextView"
@@ -84,12 +68,8 @@
     <!--Button for increasing score-->
     <Button
         android:id="@+id/increaseButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginBottom="228dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
+        style="@style/customButtonDimensions"
+        android:layout_marginStart="@dimen/button_margin"
         android:text="@string/increase"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
@@ -97,47 +77,38 @@
     <!--Button for deducting score-->
     <Button
         android:id="@+id/deductButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="228dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
+        style="@style/customButtonDimensions"
+        android:layout_marginEnd="@dimen/button_margin"
         android:text="@string/deduct"
-        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:strokeColor="#6C00F8" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <!--Switch to toggle between the teams-->
     <Switch
         android:id="@+id/teamSwitch"
+        android:theme="@style/customSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="28dp"
-        android:backgroundTint="#0055FF"
-        android:minWidth="48dp"
-        android:minHeight="48dp"
-        android:thumbTint="#FFFFFF"
+        android:layout_marginTop="@dimen/switch_marginTop"
+        android:layout_marginEnd="@dimen/switch_marginEnd"
+        android:minWidth="@dimen/switch_minSize"
+        android:minHeight="@dimen/switch_minSize"
         app:layout_constraintEnd_toStartOf="@+id/deductButton"
         app:layout_constraintTop_toBottomOf="@+id/deductButton"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
 
     <!--TextView to show current selection team-->
+    <!-- Added inline styles for this textview on top of default custom text view -->
     <TextView
         android:id="@+id/currentSelectionTextView"
-        android:layout_width="0dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="71dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="73dp"
-        android:fontFamily="sans-serif"
+        android:layout_height="@dimen/minimumHeight"
+        android:layout_width="@dimen/minimumValue"
+        android:textSize="@dimen/smallFontSize"
+        android:layout_marginStart="@dimen/current_team_marginHorizontal"
+        android:layout_marginTop="@dimen/current_team_marginTop"
+        android:layout_marginEnd="@dimen/current_team_marginHorizontal"
+        android:layout_marginBottom="@dimen/current_team_marginBottom"
         android:text="@string/current_team"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
