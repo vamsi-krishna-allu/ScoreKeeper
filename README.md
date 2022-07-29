@@ -19,7 +19,11 @@ Below are the sample screenshots for the same in day and night mode<br>
 | <img width="265" alt="Screenshot 2022-07-29 at 12 39 32 PM" src="https://user-images.githubusercontent.com/105441145/181808077-4fd36354-cc17-4586-a18e-a67ae5214e1d.png">| <img width="266" alt="Screenshot 2022-07-29 at 12 41 08 PM" src="https://user-images.githubusercontent.com/105441145/181808099-c05c5dd7-ff9e-4650-b484-e71472fc9825.png"> |
 
 
-### Author
-vamsi krishna allu  - [My Profile](https://github.com/A00259393-Vamsi) <br>
+### Authors
+
+vamsi krishna allu  - [Vamsi Profile](https://github.com/A00259393-Vamsi) <br>
 student number : A00259393 <br>
+Naresh kamanaboyana - [Naresh Profile](https://github.com/Nareshaspire) <br>
+student number : A00257027 <br>
+
 MAPD - JAV-1001 - App Development for Android <br>
