@@ -9,10 +9,10 @@
     <!--Spinner to show the list of scores-->
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="395dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="95dp"
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="@dimen/spinner_height"
+        android:layout_marginStart="@dimen/spinner_marginStart"
+        android:layout_marginTop="@dimen/spinner_marginTop"
         android:contentDescription="@string/select_change_value"
         android:entries="@array/scores_values"
         android:textAlignment="center"
@@ -69,7 +69,7 @@
     <Button
         android:id="@+id/increaseButton"
         style="@style/customButtonDimensions"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="@dimen/button_margin"
         android:text="@string/increase"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
@@ -78,23 +78,21 @@
     <Button
         android:id="@+id/deductButton"
         style="@style/customButtonDimensions"
-        android:layout_marginEnd="56dp"
+        android:layout_marginEnd="@dimen/button_margin"
         android:text="@string/deduct"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:strokeColor="#6C00F8" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <!--Switch to toggle between the teams-->
     <Switch
         android:id="@+id/teamSwitch"
+        android:theme="@style/customSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="28dp"
-        android:backgroundTint="#3D00BB"
-        android:minWidth="48dp"
-        android:minHeight="48dp"
-        android:thumbTint="#3D00BB"
+        android:layout_marginTop="@dimen/switch_marginTop"
+        android:layout_marginEnd="@dimen/switch_marginEnd"
+        android:minWidth="@dimen/switch_minSize"
+        android:minHeight="@dimen/switch_minSize"
         app:layout_constraintEnd_toStartOf="@+id/deductButton"
         app:layout_constraintTop_toBottomOf="@+id/deductButton"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
@@ -102,14 +100,13 @@
     <!--TextView to show current selection team-->
     <TextView
         android:id="@+id/currentSelectionTextView"
-        android:layout_height="31dp"
-        android:layout_width="@dimen/minimum"
+        android:layout_height="@dimen/minimumHeight"
+        android:layout_width="@dimen/minimumValue"
         android:textSize="@dimen/smallFontSize"
         android:layout_marginStart="50dp"
         android:layout_marginTop="71dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="73dp"
-        android:fontFamily="sans-serif"
         android:text="@string/current_team"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

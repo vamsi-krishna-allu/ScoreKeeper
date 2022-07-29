@@ -6,6 +6,7 @@
 package com.assignment.scorekeeperstyles;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -30,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
 
         // setting main activity as content
         setContentView(R.layout.activity_main);
-
-        // commented below line to show the styles for status bar
-        //getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        // Below line can be uncommented to view in night mode
+        //AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         // text views to set team names
         TextView teamBText = findViewById(R.id.teamBTextView);

@@ -9,14 +9,15 @@
         <item name="colorSecondary">@color/blue</item>
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">@color/purple</item>
+        <item name="android:windowBackground">@drawable/gradient_background</item>
+        <!-- Status bar color if enabled in mainActivity this can be viewed -->
+        <item name="android:statusBarColor">@color/blue</item>
 
         <!-- custom style for text view-->
         <item name="android:textViewStyle">
             @style/defaultCustomTextView
         </item>
-        <!-- custom style for button-->
+        <!-- custom view style for button-->
         <item name="materialButtonStyle">
             @style/customButton
         </item>
