@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
         // setting main activity as content
         setContentView(R.layout.activity_main);
 
-        // setting the full screen flag to hide status bar
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        // commented below line to show the styles for status bar
+        //getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         // text views to set team names
         TextView teamBText = findViewById(R.id.teamBTextView);
